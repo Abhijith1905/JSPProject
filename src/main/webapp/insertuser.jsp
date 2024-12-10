@@ -14,9 +14,8 @@ String contact =request.getParameter("contactno");
 try
 {
 	Connection con = null;
-    Class.forName("com.mysql.cj.jdbc.Driver");
     System.out.println("Driver Class Loaded");
-    con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp14", "root", "root");
+    con=DriverManager.getConnection("jdbc:mysql://root:CMwJnspnMniPqVlHYJihHZIkgjItNLKj@junction.proxy.rlwy.net:30183/railway", "root", "CMwJnspnMniPqVlHYJihHZIkgjItNLKj");
     System.out.println("Connection Established");
     
     PreparedStatement pstmt = con.prepareStatement("insert into user(fullname,gender,dob,maritalstatus,email,password,contactno) values(?,?,?,?,?,?,?)");
