@@ -80,7 +80,7 @@ try
   Connection con = null;
   Class.forName("com.mysql.cj.jdbc.Driver");
   System.out.println("Driver Class Loaded");
-  con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp14", "root", "root");
+  con=DriverManager.getConnection("jdbc:mysql://my-db-server-31277.mysql.database.azure.com:3306/jsp-project-db?useSSL=true", "abhijith", "Sriram8585");
   System.out.println("Connection Established"); 
     
   PreparedStatement pstmt = con.prepareStatement("select * from user");

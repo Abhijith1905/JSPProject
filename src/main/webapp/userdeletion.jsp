@@ -7,7 +7,7 @@ try
 {
 	Connection con = null;
     System.out.println("Driver Class Loaded");
-    con=DriverManager.getConnection("jdbc:mysql://root:CMwJnspnMniPqVlHYJihHZIkgjItNLKj@junction.proxy.rlwy.net:30183/railway", "root", "CMwJnspnMniPqVlHYJihHZIkgjItNLKj");
+    con=DriverManager.getConnection("jdbc:mysql://my-db-server-31277.mysql.database.azure.com:3306/jsp-project-db?useSSL=true", "abhijith", "Sriram8585");
     System.out.println("Connection Established");
     
     String qry = "delete from user where id = ?";

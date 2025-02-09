@@ -129,11 +129,11 @@
       <a href="calculatorform.html">Calculator</a>
     </div>
     <% try { Connection con = null; Class.forName("com.mysql.cj.jdbc.Driver");
-    System.out.println("Driver Class Loaded"); con =
-    DriverManager.getConnection("jdbc:mysql://root:CMwJnspnMniPqVlHYJihHZIkgjItNLKj@junction.proxy.rlwy.net:30183/railway",
-    "root", "CMwJnspnMniPqVlHYJihHZIkgjItNLKj"); System.out.println("Connection
-    Established"); PreparedStatement pstmt = con.prepareStatement("select * from
-    user"); ResultSet rs = pstmt.executeQuery(); %>
+    System.out.println("Driver Class Loaded"); 
+    con=DriverManager.getConnection("jdbc:mysql://my-db-server-31277.mysql.database.azure.com:3306/jsp-project-db?useSSL=true", "abhijith", "Sriram8585");
+    System.out.println("Connection Established");
+    PreparedStatement pstmt = con.prepareStatement("select * from user");
+    ResultSet rs = pstmt.executeQuery(); %>
     <h3 align="center"><u>View Registered Users</u></h3>
     <table>
       <tr>
